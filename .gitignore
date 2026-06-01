@@ -1,0 +1,12 @@
+node_modules/
+dist/
+pnpm-lock.yaml
+
+# Rust / napi-rs build outputs (the compiled .node is shipped embedded as
+# base64 in plugins/*/src/native-bin.ts, so the binaries don't need committing)
+smtc-bridge/target/
+smtc-bridge/*.node
+smtc-bridge/index.js
+smtc-bridge/index.d.ts
+smtc-bridge/*.log
+*.log

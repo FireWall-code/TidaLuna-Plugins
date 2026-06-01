@@ -1,0 +1,16 @@
+{
+  "name": "smtc-bridge",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "smtc-bridge"
+  },
+  "scripts": {
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4"
+  }
+}
