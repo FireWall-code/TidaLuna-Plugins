@@ -1,2 +1,7 @@
 packages:
  - "plugins/*"
+
+# Allow esbuild's install/build script (pnpm v10 blocks dependency build
+# scripts by default and exits non-zero otherwise).
+onlyBuiltDependencies:
+ - esbuild
