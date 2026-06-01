@@ -19,7 +19,6 @@ jobs:
    - name: Install Node.js 📥
      uses: actions/setup-node@v4
      with:
-      cache: pnpm
       node-version: latest
 
    - name: Install dependencies 📥
