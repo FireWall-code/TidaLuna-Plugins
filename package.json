@@ -7,6 +7,9 @@
 		"build": "rimraf ./dist && tsx esbuild.config.ts",
 		"serve": "http-server ./dist -p 3000 -s --cors -c-1"
 	},
+	"pnpm": {
+		"onlyBuiltDependencies": ["esbuild"]
+	},
 	"devDependencies": {
 		"@types/node": "^25.0.9",
 		"@types/react": "^19.2.8",
