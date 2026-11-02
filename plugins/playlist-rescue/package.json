@@ -1,0 +1,11 @@
+{
+	"name": "TidalPlaylistRescue",
+	"description": "Finds the unavailable tracks in your playlists and favorites and replaces them with the version of the same song that TIDAL still offers, at the same position. Pick your playlists, review every change first, and nothing is removed without a replacement unless you ask for it.",
+	"author": {
+		"name": "FireWall",
+		"url": "https://github.com/FireWall-code",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/69877709?v=4"
+	},
+	"main": "./src/index.ts",
+	"type": "module"
+}

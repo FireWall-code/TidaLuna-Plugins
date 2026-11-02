@@ -1,7 +1,7 @@
 # TidaLuna Plugins
 
 A collection of [TidaLuna](https://github.com/Inrixia/TidaLuna) plugins that extend the TIDAL
-Desktop client — Windows media controls, a local HTTP/WebSocket API, and lyrics translation.
+Desktop client — Windows media controls, a local HTTP/WebSocket API, lyrics translation, and a fix for unavailable playlist tracks.
 Install them from the Plugin Store, or build them yourself.
 
 ## Plugins
@@ -55,6 +55,21 @@ Translates and romanizes lyrics in place, in both the synced and unsynced view.
 - Auto-translate on track change, and skips lyrics already in your language
 
 Built on [vMohammad](https://vmohammad.dev)'s `translate` plugin, rewritten here.
+
+### TidalPlaylistRescue
+
+**Location:** `plugins/playlist-rescue/`
+
+Replaces the greyed-out tracks in your playlists and favorites with the version of the same song
+that TIDAL still offers, at the same position.
+
+**Features:**
+
+- Pick the playlists to check, or your favorites
+- Finds the same recording through its ISRC, or by title, artist and length as a fallback
+- Review every change before applying it, nothing is removed without a replacement unless you ask
+- Confirms with the stream endpoint that the old track is dead and the new one plays
+- Keeps a history of everything it removed
 
 ## Installation
 

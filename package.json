@@ -5,7 +5,8 @@
 	"scripts": {
 		"watch": "concurrently \"pnpm:build --watch\" pnpm:serve",
 		"build": "rimraf ./dist && tsx esbuild.config.ts",
-		"serve": "http-server ./dist -p 3000 -s --cors -c-1"
+		"serve": "http-server ./dist -p 3000 -s --cors -c-1",
+		"test": "tsx --test plugins/*/tests/*.test.ts"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": ["esbuild"]
